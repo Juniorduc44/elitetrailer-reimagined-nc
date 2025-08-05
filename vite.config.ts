@@ -5,12 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Set base path for GitHub Pages deployment
-  base: process.env.NODE_ENV === 'production' ? '/elitetrailer-reimagined-nc/' : '/',
-  
-  build: {
-    outDir: 'docs',
-  },
+  base: '/',
   
   server: {
     host: "::",
