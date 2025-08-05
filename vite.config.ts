@@ -4,8 +4,8 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  base: '/elitetrailer-reimagined-nc/',
+export default defineConfig({
+  base: '/',
   build: {
     outDir: 'docs',
   },
