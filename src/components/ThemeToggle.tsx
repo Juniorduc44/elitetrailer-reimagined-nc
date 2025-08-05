@@ -11,7 +11,8 @@ export const ThemeToggle = ({ currentTheme, onThemeChange }: ThemeToggleProps) =
     { id: 'bold', name: 'Bold', description: 'Modern and striking' },
     { id: 'clean', name: 'Clean', description: 'Minimal and fresh' },
     { id: 'neon', name: 'Neon', description: 'Cyberpunk vibes' },
-    { id: 'glass', name: 'Glass', description: 'Ultra modern glassmorphism' }
+    { id: 'glass', name: 'Glass', description: 'Ultra modern glassmorphism' },
+    { id: 'kesler', name: 'Kesler', description: 'Industrial & powerful' }
   ];
 
   return (

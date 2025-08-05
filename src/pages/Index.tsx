@@ -13,7 +13,7 @@ const Index = () => {
 
   useEffect(() => {
     // Remove existing theme classes
-    document.documentElement.classList.remove("theme-bold", "theme-clean", "theme-neon", "theme-glass");
+    document.documentElement.classList.remove("theme-bold", "theme-clean", "theme-neon", "theme-glass", "theme-kesler");
     
     // Add new theme class
     if (currentTheme === "bold") {
@@ -24,6 +24,8 @@ const Index = () => {
       document.documentElement.classList.add("theme-neon");
     } else if (currentTheme === "glass") {
       document.documentElement.classList.add("theme-glass");
+    } else if (currentTheme === "kesler") {
+      document.documentElement.classList.add("theme-kesler");
     }
   }, [currentTheme]);
 
