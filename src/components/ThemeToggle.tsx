@@ -10,7 +10,7 @@ export const ThemeToggle = ({ currentTheme, onThemeChange }: ThemeToggleProps) =
     { id: 'professional', name: 'Professional', description: 'Clean and trustworthy' },
     { id: 'bold', name: 'Bold', description: 'Modern and striking' },
     { id: 'clean', name: 'Clean', description: 'Minimal and fresh' },
-    { id: 'neon', name: 'Neon', description: 'Cyberpunk vibes' },
+    { id: 'variant1', name: 'Variant 1', description: 'Premium & luxurious' },
     { id: 'glass', name: 'Glass', description: 'Ultra modern glassmorphism' },
     { id: 'kesler', name: 'Kesler', description: 'Industrial & powerful' }
   ];

@@ -13,15 +13,15 @@ const Index = () => {
 
   useEffect(() => {
     // Remove existing theme classes
-    document.documentElement.classList.remove("theme-bold", "theme-clean", "theme-neon", "theme-glass", "theme-kesler");
+    document.documentElement.classList.remove("theme-bold", "theme-clean", "theme-variant1", "theme-glass", "theme-kesler");
     
     // Add new theme class
     if (currentTheme === "bold") {
       document.documentElement.classList.add("theme-bold");
     } else if (currentTheme === "clean") {
       document.documentElement.classList.add("theme-clean");
-    } else if (currentTheme === "neon") {
-      document.documentElement.classList.add("theme-neon");
+    } else if (currentTheme === "variant1") {
+      document.documentElement.classList.add("theme-variant1");
     } else if (currentTheme === "glass") {
       document.documentElement.classList.add("theme-glass");
     } else if (currentTheme === "kesler") {

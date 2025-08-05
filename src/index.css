@@ -165,38 +165,38 @@
     --shadow-float: 0 20px 40px -10px hsl(180 15% 15% / 0.12);
   }
 
-  /* Neon Theme - Cyberpunk Inspired */
-  .theme-neon {
-    --background: 10 20% 8%;
-    --foreground: 300 100% 95%;
-    --card: 10 15% 12%;
-    --card-foreground: 300 100% 95%;
-    --popover: 10 15% 12%;
-    --popover-foreground: 300 100% 95%;
-    --primary: 300 100% 70%;
-    --primary-foreground: 10 20% 8%;
-    --primary-glow: 300 100% 80%;
-    --accent-red: 350 100% 65%;
-    --accent-red-foreground: 10 20% 8%;
-    --secondary: 280 80% 15%;
-    --secondary-foreground: 300 100% 90%;
-    --muted: 280 50% 15%;
-    --muted-foreground: 300 60% 70%;
-    --accent: 280 80% 15%;
-    --accent-foreground: 300 100% 90%;
-    --border: 300 50% 25%;
-    --input: 280 50% 15%;
-    --ring: 300 100% 70%;
+  /* Variant 1 Theme - Premium & Luxurious */
+  .theme-variant1 {
+    --background: 220 25% 6%;
+    --foreground: 45 40% 95%;
+    --card: 220 20% 9%;
+    --card-foreground: 45 40% 95%;
+    --popover: 220 20% 9%;
+    --popover-foreground: 45 40% 95%;
+    --primary: 45 95% 55%;
+    --primary-foreground: 220 25% 6%;
+    --primary-glow: 45 95% 65%;
+    --accent-red: 25 80% 55%;
+    --accent-red-foreground: 220 25% 6%;
+    --secondary: 220 15% 12%;
+    --secondary-foreground: 45 30% 85%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 45 20% 70%;
+    --accent: 220 15% 12%;
+    --accent-foreground: 45 30% 85%;
+    --border: 45 20% 25%;
+    --input: 220 15% 15%;
+    --ring: 45 95% 55%;
     
-    /* Neon gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(300 100% 70%), hsl(350 100% 65%), hsl(280 100% 75%));
-    --gradient-subtle: linear-gradient(180deg, hsl(10 20% 8%), hsl(280 30% 12%));
-    --gradient-accent: linear-gradient(135deg, hsl(350 100% 65%), hsl(300 100% 70%));
+    /* Premium gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(220 25% 6%), hsl(220 20% 9%), hsl(45 95% 55% / 0.05));
+    --gradient-subtle: linear-gradient(180deg, hsl(220 25% 6%), hsl(220 20% 8%));
+    --gradient-accent: linear-gradient(135deg, hsl(45 95% 55%), hsl(25 80% 55%));
     
-    /* Neon shadows with glow */
-    --shadow-elegant: 0 10px 40px -10px hsl(300 100% 70% / 0.6), 0 0 30px hsl(300 100% 70% / 0.3);
-    --shadow-card: 0 4px 20px -2px hsl(300 100% 70% / 0.2), 0 0 15px hsl(300 100% 70% / 0.1);
-    --shadow-float: 0 20px 40px -10px hsl(300 100% 70% / 0.4), 0 0 40px hsl(300 100% 70% / 0.2);
+    /* Luxurious shadows */
+    --shadow-elegant: 0 25px 50px -12px hsl(45 95% 55% / 0.25), 0 0 30px hsl(45 95% 55% / 0.1);
+    --shadow-card: 0 8px 25px -5px hsl(220 25% 6% / 0.3), 0 0 0 1px hsl(45 20% 25% / 0.2);
+    --shadow-float: 0 35px 60px -12px hsl(220 25% 6% / 0.4), 0 0 40px hsl(45 95% 55% / 0.15);
   }
 
   /* Glass Theme - Modern Glassmorphism */
@@ -281,30 +281,26 @@
     background: linear-gradient(135deg, hsl(240 50% 90%), hsl(260 60% 95%));
   }
 
-  /* Neon theme animations */
-  .theme-neon {
-    animation: neon-pulse 3s ease-in-out infinite alternate;
+  /* Variant 1 theme specific styles */
+  .theme-variant1 {
+    background: linear-gradient(135deg, hsl(220 25% 6%), hsl(220 20% 8%));
   }
 
-  @keyframes neon-pulse {
-    0% {
-      filter: brightness(1);
-    }
-    100% {
-      filter: brightness(1.05);
-    }
+  .theme-variant1 .bg-card {
+    background: linear-gradient(135deg, hsl(220 20% 9% / 0.8), hsl(220 15% 12% / 0.9));
+    border: 1px solid hsl(45 20% 25% / 0.3);
   }
 
-  .theme-neon .bg-gradient-hero {
-    animation: neon-shift 4s ease-in-out infinite;
+  .theme-variant1 .bg-gradient-hero {
+    animation: premium-glow 6s ease-in-out infinite;
   }
 
-  @keyframes neon-shift {
+  @keyframes premium-glow {
     0%, 100% {
-      filter: hue-rotate(0deg);
+      box-shadow: 0 0 30px hsl(45 95% 55% / 0.1);
     }
     50% {
-      filter: hue-rotate(15deg);
+      box-shadow: 0 0 50px hsl(45 95% 55% / 0.2);
     }
   }
 }
