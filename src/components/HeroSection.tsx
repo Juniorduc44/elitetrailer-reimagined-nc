@@ -6,7 +6,7 @@ export const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-glow/80 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-primary-glow/20 z-10" />
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroTrailer})` }}
