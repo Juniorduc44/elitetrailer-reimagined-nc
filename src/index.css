@@ -164,6 +164,115 @@
     --shadow-card: 0 4px 20px -2px hsl(180 15% 15% / 0.08);
     --shadow-float: 0 20px 40px -10px hsl(180 15% 15% / 0.12);
   }
+
+  /* Neon Theme - Cyberpunk Inspired */
+  .theme-neon {
+    --background: 10 20% 8%;
+    --foreground: 300 100% 95%;
+    --card: 10 15% 12%;
+    --card-foreground: 300 100% 95%;
+    --popover: 10 15% 12%;
+    --popover-foreground: 300 100% 95%;
+    --primary: 300 100% 70%;
+    --primary-foreground: 10 20% 8%;
+    --primary-glow: 300 100% 80%;
+    --accent-red: 350 100% 65%;
+    --accent-red-foreground: 10 20% 8%;
+    --secondary: 280 80% 15%;
+    --secondary-foreground: 300 100% 90%;
+    --muted: 280 50% 15%;
+    --muted-foreground: 300 60% 70%;
+    --accent: 280 80% 15%;
+    --accent-foreground: 300 100% 90%;
+    --border: 300 50% 25%;
+    --input: 280 50% 15%;
+    --ring: 300 100% 70%;
+    
+    /* Neon gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(300 100% 70%), hsl(350 100% 65%), hsl(280 100% 75%));
+    --gradient-subtle: linear-gradient(180deg, hsl(10 20% 8%), hsl(280 30% 12%));
+    --gradient-accent: linear-gradient(135deg, hsl(350 100% 65%), hsl(300 100% 70%));
+    
+    /* Neon shadows with glow */
+    --shadow-elegant: 0 10px 40px -10px hsl(300 100% 70% / 0.6), 0 0 30px hsl(300 100% 70% / 0.3);
+    --shadow-card: 0 4px 20px -2px hsl(300 100% 70% / 0.2), 0 0 15px hsl(300 100% 70% / 0.1);
+    --shadow-float: 0 20px 40px -10px hsl(300 100% 70% / 0.4), 0 0 40px hsl(300 100% 70% / 0.2);
+  }
+
+  /* Glass Theme - Modern Glassmorphism */
+  .theme-glass {
+    --background: 240 20% 95%;
+    --foreground: 240 20% 15%;
+    --card: 240 30% 98% / 0.7;
+    --card-foreground: 240 20% 15%;
+    --popover: 240 30% 98% / 0.9;
+    --popover-foreground: 240 20% 15%;
+    --primary: 260 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 260 100% 70%;
+    --accent-red: 320 85% 60%;
+    --accent-red-foreground: 0 0% 100%;
+    --secondary: 240 20% 90% / 0.8;
+    --secondary-foreground: 240 20% 15%;
+    --muted: 240 15% 92% / 0.6;
+    --muted-foreground: 240 20% 40%;
+    --accent: 240 20% 90% / 0.8;
+    --accent-foreground: 240 20% 15%;
+    --border: 240 30% 85% / 0.5;
+    --input: 240 15% 92% / 0.6;
+    --ring: 260 100% 60%;
+    
+    /* Glass gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(260 100% 60% / 0.9), hsl(280 100% 70% / 0.8), hsl(300 100% 65% / 0.9));
+    --gradient-subtle: linear-gradient(180deg, hsl(240 30% 98% / 0.3), hsl(240 20% 95% / 0.5));
+    --gradient-accent: linear-gradient(135deg, hsl(320 85% 60% / 0.8), hsl(280 100% 70% / 0.7));
+    
+    /* Glass shadows with blur */
+    --shadow-elegant: 0 8px 32px 0 hsl(260 100% 60% / 0.15), 0 0 0 1px hsl(240 30% 85% / 0.2);
+    --shadow-card: 0 4px 20px 0 hsl(240 20% 15% / 0.1), 0 0 0 1px hsl(240 30% 85% / 0.3);
+    --shadow-float: 0 20px 40px 0 hsl(240 20% 15% / 0.1), 0 0 0 1px hsl(240 30% 85% / 0.2);
+  }
+
+  /* Glass theme specific styles */
+  .theme-glass {
+    background: linear-gradient(135deg, hsl(240 50% 90%), hsl(260 60% 95%));
+  }
+
+  .theme-glass .bg-card {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .theme-glass .bg-background {
+    background: linear-gradient(135deg, hsl(240 50% 90%), hsl(260 60% 95%));
+  }
+
+  /* Neon theme animations */
+  .theme-neon {
+    animation: neon-pulse 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes neon-pulse {
+    0% {
+      filter: brightness(1);
+    }
+    100% {
+      filter: brightness(1.05);
+    }
+  }
+
+  .theme-neon .bg-gradient-hero {
+    animation: neon-shift 4s ease-in-out infinite;
+  }
+
+  @keyframes neon-shift {
+    0%, 100% {
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      filter: hue-rotate(15deg);
+    }
+  }
 }
 
 @layer base {
