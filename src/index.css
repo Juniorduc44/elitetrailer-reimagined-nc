@@ -256,15 +256,17 @@
     --input: 0 0% 18%;
     --ring: 0 75% 45%;
     
-    /* Industrial gradients */
+    /* Industrial gradients - Enhanced for professional footer */
     --gradient-hero: linear-gradient(135deg, hsl(0 0% 8%), hsl(0 0% 12%), hsl(0 75% 45% / 0.1));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 8%), hsl(0 0% 10%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 4%), hsl(0 0% 8%), hsl(0 75% 45% / 0.05));
     --gradient-accent: linear-gradient(135deg, hsl(0 85% 50%), hsl(0 75% 45%));
+    --gradient-footer: linear-gradient(135deg, hsl(0 0% 6%), hsl(0 0% 10%), hsl(0 75% 45% / 0.08));
     
     /* Industrial shadows */
     --shadow-elegant: 0 10px 40px -10px hsl(0 75% 45% / 0.4);
     --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
     --shadow-float: 0 20px 40px -10px hsl(0 0% 0% / 0.4);
+    --shadow-footer: inset 0 1px 0 hsl(0 75% 45% / 0.1);
   }
 
   /* Glass theme specific styles */

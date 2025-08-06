@@ -2,7 +2,7 @@ import { Phone, MapPin } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-foreground text-background py-16">
+    <footer className="bg-gradient-subtle border-t border-foreground/10 py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
